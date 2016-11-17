@@ -1,0 +1,71 @@
+{# empty Twig template #}
+{% extends '::base.html.twig' %}
+
+{% block contenido %}
+
+    </div>
+    <div class="sombra">
+    <div class="nucleo">
+        <div id="migas">
+        <div class="clear"></div> 
+
+    </div>
+
+
+    <div class="contenido">
+         <h1>Carreras por disputar</h1>
+ <div class="centro">
+ <ul>
+     <li class="columna">
+         <ul>
+      {% for car in carrerasNoDisp%}
+     <li class="celda">
+         <div class="parteCelda">
+             <img src="/bundles/appapp/images/matutrail.jpg">
+         </div>
+         <div class="parteCelda2">
+             <h3><a href="/{{locale}}/corredores/carrera/{{car.getNombre()}}">{{car.getNombre()}}</a></h3>
+             <p> {{car.getFechaCelebracion() | date}}</p>
+             <div style="float:right; padding:10px 5px">
+                      <a style="padding:5px 8px 5px 10px;background:#5C7E6D;color:#FFF" href="/{{locale}}/corredores/inscribir/{{car.getNombre()}}"><span>Inscríbete</span> </a>
+            </div>
+         </div>    
+     </li>
+     {%endfor%}
+  </ul>
+     </li>
+ </ul>
+</div>
+ <div class="clear"></div>   
+ <h1>Carreras disputadas</h1>
+<div class="centro">
+ <ul>
+     <li class="columna">
+         <ul>
+     {% for car in carrerasDisp%}
+      <li class="celda">
+         <div class="parteCelda">
+             <img src="/bundles/appapp/images/ur.png">
+         </div>
+         <div class="parteCelda2">
+             <h3><a href="/{{locale}}/corredores/carrera/{{car.getNombre()}}">{{car.getNombre()}}</a></h3>
+             <p>    {{car.getFechaCelebracion() | date}}</p>
+             <div style="float:right; padding:10px 5px">
+                      <a style="padding:5px 8px 5px 10px;background:#5C7E6D;color:#FFF" href="/{{locale}}/corredores/carrera/{{car.getNombre()}}"><span>Clasificaciones</span> </a>
+            </div>
+         </div>    
+     </li>
+     {%endfor%}
+          </ul>
+ </li>
+ </ul>
+</div>
+ <div class="clear"></div>   
+ 
+    </div>
+    <div class="clear"></div>  
+    <div class="separa"></div>
+
+    
+
+{% endblock %}

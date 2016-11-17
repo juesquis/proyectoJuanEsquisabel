@@ -1,0 +1,5 @@
+app_app:
+    resource: "@AppAppBundle/Resources/config/routing.yml"
+    prefix:   /
+    type: be_simple_i18n
+

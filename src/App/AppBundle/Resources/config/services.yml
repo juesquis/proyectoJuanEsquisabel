@@ -1,0 +1,29 @@
+services:
+    corredorrepository:
+         alias: corredorrepository.inmemory
+    corredorrepository.inmemory:
+         class: App\CorredoresRiojaDomain\Repository\Infrastructure\InMemoryCorredorRepository
+         public: false
+         
+    organizacionrepository:
+         alias: organizacionrepository.inmemory
+    organizacionrepository.inmemory:
+         class: App\CorredoresRiojaDomain\Repository\Infrastructure\InMemoryOrganizacionRepository
+         public: false
+    
+    carrerarepository:
+         alias:  carrerarepository.inmemory
+    carrerarepository.inmemory:
+         class: App\CorredoresRiojaDomain\Repository\Infrastructure\InMemoryCarreraRepository
+         public: false
+     
+    participanterepository:
+         alias:  participanterepository.inmemory
+    participanterepository.inmemory:
+         class: App\CorredoresRiojaDomain\Repository\Infrastructure\InMemoryParticipanteRepository
+         public: false
+         
+    corredores_user_provider:
+        class : App\CorredoresRiojaDomain\Security\CorredorUserProvider
+        arguments: ["@corredorrepository"]
+    

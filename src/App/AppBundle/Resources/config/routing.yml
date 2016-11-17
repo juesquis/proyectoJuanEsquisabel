@@ -1,0 +1,59 @@
+show_corredores:
+    locales:  { en: "/{_locale}/", es: "/{_locale}/" }
+    defaults: { _controller: AppAppBundle:Default:mostrarCorredores }
+    requirements:
+       _locale: en|es
+
+show_corredores2:
+    locales:  { en: "/", es: "/" }
+    defaults: { _controller: AppAppBundle:Default:mostrarCorredores }
+    
+show_organizacion_slug:
+    path: /{_locale}/corredores/organizacion/{slug}
+    defaults: { _controller: AppAppBundle:Default:buscarOrganizacionSlug}
+    
+show_carreras:
+    locales:  { en: "/en/runners/trails", es: "/es/corredores/carreras" }
+    defaults: { _controller: AppAppBundle:Default:mostrarCarreras}
+    
+show_carreras_slug:
+    path: /{_locale}/corredores/carreras/{slug}
+    defaults: { _controller: AppAppBundle:Default:buscarCarreraSlug}
+    
+show_carrera_slug:
+    path: /{_locale}/corredores/carrera/{slug}
+    defaults: { _controller: AppAppBundle:Default:buscarCarreraSlug}
+    
+inscribir:
+    path: /{_locale}/corredores/inscribir/{slug}
+    defaults: { _controller: AppAppBundle:Corredor:inscribirCarreraSlug}
+    
+show_corredores_registro:
+    path: /{_locale}/registro
+    defaults: { _controller: AppAppBundle:Corredor:registro}
+    
+show_corredores_perfil:
+    locales:  { en: "/en/runners/profile", es: "/es/corredores/perfil" }
+    defaults: { _controller: AppAppBundle:Corredor:perfil}
+    
+show_corredores_miscarreras:
+    locales:  { en: "/en/runners/myraces", es: "/es/corredores/miscarreras" }
+    defaults: { _controller: AppAppBundle:Corredor:miscarreras}  
+   
+desapuntarse:
+    path: /{_locale}/corredores/desapuntar/{slug}
+    defaults: { _controller: AppAppBundle:Corredor:desapuntar}
+    
+usuario_login:
+    locales:  { en: "/en/runners/login", es: "/es/corredores/login" }
+    defaults: { _controller: AppAppBundle:Corredor:login}
+    
+usuario_login_check:
+    path: /login_check
+    
+usuario_logout:
+    path: /logout
+    
+admin:
+    path: /admin
+    defaults: { _controller: AppAppBundle:Default:admin}

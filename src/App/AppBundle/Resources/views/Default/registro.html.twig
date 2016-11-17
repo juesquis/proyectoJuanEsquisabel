@@ -1,0 +1,22 @@
+{# empty Twig template #}
+{% extends '::base.html.twig' %}
+
+{% block contenido %}
+    
+    </div>
+    <div class="sombra">
+    <div class="nucleo">
+        <div id="migas">
+        <div class="clear"></div> 
+
+    </div>
+
+
+    <div class="contenido">
+<form action="{{ path('show_corredores_registro') }}" method="post" >
+    {{ form(formulario) }}
+</form>
+     </div>
+    <div class="clear"></div>  
+    <div class="separa"></div>
+{%endblock%}

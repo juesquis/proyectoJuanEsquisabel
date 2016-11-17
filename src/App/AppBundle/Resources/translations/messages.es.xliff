@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="es" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>Portada</source>
+                <target>Portada</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Carreras</source>
+                <target>Carreras</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>misCarreras</source>
+                <target>Mis carreras</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>corredores</source>
+                <target>corredores</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>carreras</source>
+                <target>carreras</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>perfil</source>
+                <target>perfil</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>bienvenido</source>
+                <target>Bienvenido a Carreras por La Rioja </target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>miscarreras</source>
+                <target>miscarreras</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>textoinicio</source>
+                    <target>Carreras por La Rioja es un sitio web donde corredores de todos los niveles pueden inscribirse en carreras organizadas en La Rioja. A continuación se muestran algunas de las carreras a las que te puedes inscribir.</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>ZonaCorredores</source>
+                <target>Zona Corredores</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>ZonaOrganizaciones</source>
+                <target>Zona Organizaciones</target>
+            </trans-unit>
+            
+        </body>
+    </file>
+</xliff>

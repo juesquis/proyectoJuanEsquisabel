@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+
+{% block contenido %}
+    
+    </div>
+    <div class="sombra">
+    <div class="nucleo">
+        <div id="migas">
+        <div class="clear"></div> 
+
+    </div>
+        
+
+
+    <div class="contenido"> 
+        {% for mensaje in app.session.flashbag.get('info')%}
+            <p class="info"></p>
+    {%endfor%}
+        
+ <h1>{{ "bienvenido" | trans }} </h1>
+ <p>{{ "textoinicio" | trans }}</p>
+ 
+   
+ 
+ 
+    </div>
+    <div class="clear"></div>  
+    <div class="separa"></div>
+
+    
+
+{% endblock %}
